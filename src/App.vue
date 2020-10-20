@@ -1,21 +1,21 @@
 <template>
   <div id="app">
     <NavBar headline="Emily Rosenkranz" />
-    <Main />
+    <Content />
     <Footer />
   </div>
 </template>
 
 <script>
 import NavBar from './components/Navbar.vue'
-import Main from './components/Main.vue'
+import Content from './components/Content.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    Main,
+    Content,
     Footer
   }
 }

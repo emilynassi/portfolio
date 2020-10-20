@@ -29,7 +29,7 @@ import GridItem from '../components/GridItem.vue'
 // import projects from '../assets/data/projects.json'
 
 export default {
-  name: 'Main',
+  name: 'Content',
   components : {
     GridItem
   }
