@@ -1,5 +1,5 @@
 <template>
-   <header>
+  <header>
     <h1>Emily Rosenkranz</h1>
     <nav>
       <a href="#about">About Me</a>
@@ -15,9 +15,9 @@
 
 <script>
 export default {
-  name: "NavBar",
+  name: 'NavBar',
   props: {
     headline: String
   }
-};
+}
 </script>

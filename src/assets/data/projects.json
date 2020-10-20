@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Jamalyze",
+    "featured": true,
+    "description": "This full-stack application explores concert trends across the nation in regards to genre, price, and location.",
+    "stack": ["Python", "Flask", "JavaScript"],
+    "link": "https://jamalyze.herokuapp.com"
+  },
+  {
+    "id": 2,
+    "title": "SCSS Builder",
+    "featured": false,
+    "description": null,
+    "stack": ["JavaScript", "Node", "SCSS"],
+    "link": "https://github.com/emilynassi/scss-boilerplate"
+  },
+  {
+    "id": 3,
+    "title": "Checkup",
+    "featured": false,
+    "description": null,
+    "stack": ["UX Research", "Prototyping", "Hi-Fi Wireframes"],
+    "link": "https://github.com/emilynassi/scss-boilerplate"
+  },
+  {
+    "id": 4,
+    "title": "SF sObject Log",
+    "featured": false,
+    "description": null,
+    "stack": ["SFDX", "Node", "JavaScript"],
+    "link": "https://github.com/emilynassi/sf-sobject-log"
+  },
+  {
+    "id": 5,
+    "title": "Client-Side Filter",
+    "featured": false,
+    "description": null,
+    "stack": ["JavaScript", "HTML"],
+    "link": "https://github.com/emilynassi/client-side-filter"
+  }
+]
