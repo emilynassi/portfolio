@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import TheHeader from '../components/TheHeader.vue';
 import TheProjects from '../components/TheProjects.vue';
+import ThePosts from '../components/ThePosts.vue';
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import TheProjects from '../components/TheProjects.vue';
     <TheHeader />
     <main>
       <TheProjects />
+      <ThePosts />
     </main>
   </div>
 </template>

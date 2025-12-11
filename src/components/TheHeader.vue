@@ -34,9 +34,9 @@
         v-for="link in links"
         :key="link.label"
         :href="link.href"
-        :class="link.color"
+        class="px-2.5 py-1 text-sm font-medium rounded transition-colors"
+        :class="[link.color, link.color ? 'text-black' : 'text-black dark:text-white']"
         :target="link.target || '_self'"
-        class="px-2.5 py-1 text-sm font-medium rounded text-black transition-colors"
         >{{ link.label }}</a
       >
     </div>

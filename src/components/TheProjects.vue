@@ -27,7 +27,7 @@ const projects = ref<Project[]>([
     year: 2025,
     tags: ['Vue', 'TypeScript'],
     title: 'NHL Color Accessibility Checker',
-    link: 'https://github.com/alex/nhl-colors',
+    link: 'https://nhl-color-checker.netlify.app/',
     description:
       'Visualizes how NHL team colors appear under different types of color blindness, with an interactive hockey rink display.',
   },
@@ -35,14 +35,14 @@ const projects = ref<Project[]>([
     year: 2025,
     tags: ['Next.js', 'TypeScript'],
     title: 'NHL Time on Ice tracker',
-    link: 'https://github.com/alex/nhl-time-on-ice',
+    link: 'https://toi-tracker.vercel.app/',
     description: 'Tracks the time on ice for NHL players and teams.',
   },
   {
     year: 2024,
     tags: ['Node.js', 'JavaScript'],
     title: 'Discord Prediction Bot',
-    link: 'https://github.com/alex/prediction-bot',
+    link: 'https://github.com/emilynassi/pickem-command',
     description:
       'Handles over/underpredictions for gaming communities with vote reconciliation and persistent state across sessions.',
   },

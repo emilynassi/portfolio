@@ -1,26 +1,27 @@
 <template>
   <a
-    href="#"
+    :href="project.link"
+    target="_blank"
     class="group flex flex-col gap-3"
   >
     <span class="text-[clamp(3rem,6vw,4.5rem)] font-bold tracking-tight leading-none">
-      {{ props.project.year }}</span
+      {{ project.year }}</span
     >
     <div class="flex flex-wrap gap-1.5">
       <span
         :class="['px-2.5 py-1 text-sm font-medium rounded text-black', getTagColor(tag)]"
-        v-for="tag in props.project.tags"
+        v-for="tag in project.tags"
         :key="tag"
         >{{ tag }}</span
       >
     </div>
-    <h3 class="text-base font-semibold mt-1">{{ props.project.title }}</h3>
+    <h3 class="text-base font-semibold mt-1">{{ project.title }}</h3>
     <span
       class="text-sm text-text-muted group-hover:text-text-primary transition-colors break-all"
-      >{{ props.project.link }}</span
+      >{{ project.link }}</span
     >
     <p class="text-[0.9375rem] leading-normal max-w-xs">
-      {{ props.project.description }}
+      {{ project.description }}
     </p>
   </a>
 </template>
