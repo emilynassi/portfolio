@@ -6,22 +6,41 @@
         <span class="text-sm text-text-muted">Built with too much coffee.</span>
         <div class="flex gap-6">
           <a
-            href="#"
-            class="text-sm text-text-muted hover:text-text-primary transition-colors"
-            >GitHub</a
-          >
-          <a
-            href="#"
-            class="text-sm text-text-muted hover:text-text-primary transition-colors"
-            >LinkedIn</a
-          >
-          <a
-            href="#"
-            class="text-sm text-text-muted hover:text-text-primary transition-colors"
-            >Email</a
+            v-for="link in links"
+            :key="link.label"
+            :href="link.href"
+            class="px-2.5 py-1 text-sm font-medium rounded transition-colors"
+            :class="[link.color, link.color ? 'text-black' : 'text-black dark:text-white']"
+            :target="link.target || '_self'"
+            >{{ link.label }}</a
           >
         </div>
       </div>
     </div>
   </footer>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+import type { Link } from './TheHeader.vue';
+const links = ref<Link[]>([
+  {
+    label: 'GitHub',
+    href: 'https://github.com/emilynassi',
+    color: 'bg-tag-yellow',
+    target: '_blank',
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/emilynassi/',
+    color: 'bg-tag-pink',
+    target: '_blank',
+  },
+  {
+    label: 'Email',
+    href: 'mailto:emily.nassi1@gmail.com',
+    color: 'bg-tag-blue',
+    target: '_self',
+  },
+]);
+</script>

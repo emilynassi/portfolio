@@ -5,7 +5,7 @@
     class="pb-16 md:pb-32"
   >
     <h2 class="text-[clamp(2.5rem,7vw,5rem)] font-bold tracking-tight mb-8 md:mb-16">
-      Selected Projects
+      Featured Projects
     </h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">

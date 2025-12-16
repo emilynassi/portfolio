@@ -88,7 +88,7 @@ function stopSparkles() {
   }
 }
 
-interface Link {
+export interface Link {
   label: string;
   href: string;
   target?: '_blank' | '_self' | '_parent' | '_top';
@@ -117,14 +117,7 @@ const links = ref<Link[]>([
   {
     label: 'Email',
     href: 'mailto:emily.nassi1@gmail.com',
-  },
-  {
-    label: 'Projects',
-    href: '#projects',
-  },
-  {
-    label: 'Posts',
-    href: '#posts',
+    color: 'bg-tag-blue',
   },
 ]);
 </script>
