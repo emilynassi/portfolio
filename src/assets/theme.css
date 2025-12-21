@@ -1,0 +1,172 @@
+@theme {
+  /* Fonts */
+  --font-sans: 'Mona Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /* Colors as tokens that reference CSS variables */
+  --color-bg: var(--bg);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-text-primary: var(--text-primary);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border-color);
+
+  /* Tag colors */
+  --color-tag-yellow: var(--tag-yellow);
+  --color-tag-pink: var(--tag-pink);
+  --color-tag-green: var(--tag-green);
+  --color-tag-blue: var(--tag-blue);
+  --color-tag-purple: var(--tag-purple);
+  --color-tag-orange: var(--tag-orange);
+
+  /* Sparkle colors */
+  --color-sparkle-red: #ff6b6b;
+  --color-sparkle-yellow: #ffe66d;
+  --color-sparkle-teal: #4ecdc4;
+  --color-sparkle-blue: #45b7d1;
+  --color-sparkle-green: #96e6a1;
+  --color-sparkle-purple: #dda0dd;
+
+  /* Animations */
+  --animate-gradient-shift: gradient-shift 2s ease infinite;
+  --animate-twinkle: twinkle 0.6s ease-in-out forwards;
+}
+
+:root {
+  --bg: #ffffff;
+  --bg-secondary: #f0f0f0;
+  --text-primary: #000000;
+  --text-muted: #666666;
+  --border-color: #e5e5e5;
+  --tag-yellow: #ffff00;
+  --tag-pink: #ffb6c1;
+  --tag-green: #90ee90;
+  --tag-blue: #add8e6;
+  --tag-purple: #dda0dd;
+  --tag-orange: #ffd700;
+}
+
+.dark {
+  --bg: #0d0d0d;
+  --bg-secondary: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-muted: #999999;
+  --border-color: #2a2a2a;
+  --tag-yellow: #e6db00;
+  --tag-pink: #e89aaa;
+  --tag-green: #7ad67a;
+  --tag-blue: #8bc4d6;
+  --tag-purple: #c88bc8;
+  --tag-orange: #e6c200;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1) rotate(20deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(45deg);
+  }
+}
+
+/* Name hover gradient effect */
+.name-text {
+  background: linear-gradient(90deg, currentColor 0%, currentColor 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.name:hover .name-text {
+  background: linear-gradient(
+    90deg,
+    var(--color-sparkle-red),
+    var(--color-sparkle-yellow),
+    var(--color-sparkle-teal),
+    var(--color-sparkle-blue),
+    var(--color-sparkle-green),
+    var(--color-sparkle-purple),
+    var(--color-sparkle-red)
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: var(--animate-gradient-shift);
+}
+
+/* Sparkle styles */
+.sparkle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sparkle::before,
+.sparkle::after {
+  content: '';
+  position: absolute;
+  background: currentColor;
+}
+
+.sparkle::before {
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.sparkle::after {
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.sparkle.twinkle {
+  animation: var(--animate-twinkle);
+}
+
+.sparkle:nth-child(1) {
+  color: var(--color-sparkle-red);
+}
+.sparkle:nth-child(2) {
+  color: var(--color-sparkle-yellow);
+}
+.sparkle:nth-child(3) {
+  color: var(--color-sparkle-teal);
+}
+.sparkle:nth-child(4) {
+  color: var(--color-sparkle-blue);
+}
+.sparkle:nth-child(5) {
+  color: var(--color-sparkle-green);
+}
+.sparkle:nth-child(6) {
+  color: var(--color-sparkle-purple);
+}
+.sparkle:nth-child(7) {
+  color: var(--color-sparkle-red);
+}
+.sparkle:nth-child(8) {
+  color: var(--color-sparkle-yellow);
+}

@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+/* @import './base.css'; */
+@import './theme.css';
+@custom-variant dark (&:where(.dark, .dark *));
+
+#app {
+  /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal; */
+}
