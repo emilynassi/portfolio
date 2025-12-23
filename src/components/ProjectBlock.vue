@@ -20,10 +20,11 @@
       class="text-sm text-text-muted group-hover:text-text-primary transition-colors break-all"
       >{{ project.link }}</span
     >
-    <p class="text-[0.9375rem] leading-normal max-w-xs">
-      {{ project.description }}
-    </p>
-  </a>
+    <p
+      v-html="project.description"
+      class="text-[0.9375rem] leading-normal max-w-xs"
+    ></p
+  ></a>
 </template>
 
 <script setup lang="ts">

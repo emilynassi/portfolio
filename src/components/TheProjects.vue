@@ -29,7 +29,7 @@ const projects = ref<Project[]>([
     title: 'NHL Color Accessibility Checker',
     link: 'https://nhl-color-checker.netlify.app/',
     description:
-      'Visualizes how NHL team colors appear under different types of color blindness, with an interactive hockey rink display.',
+      'Visualizes how NHL team colors appear under different types of color blindness, with an interactive hockey rink display. Inspired by this photo <a class="underline" href="https://www.instagram.com/p/DRJIFt6ke2-/" target="_blank">here</a>.',
   },
   {
     year: 2025,

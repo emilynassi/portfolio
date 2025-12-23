@@ -90,6 +90,8 @@
   background: linear-gradient(90deg, currentColor 0%, currentColor 100%);
   -webkit-background-clip: text;
   background-clip: text;
+  padding-bottom: 0.1em;
+  overflow: visible;
 }
 
 .name:hover .name-text {
